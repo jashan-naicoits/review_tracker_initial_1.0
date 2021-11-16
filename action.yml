@@ -1,0 +1,25 @@
+name: 'Hello World'
+description: 'Greet someone and record the time'
+inputs:
+  who-to-greet:  # id of input
+    description: 'Who to greet'
+    required: true
+    default: 'World'
+  sheetId:  # sheet id of input
+    description: 'Sheet Id'
+    required: true
+    default: 'World'
+  client_email:  # client email of input
+    description: 'Client Email'
+    required: true
+    default: 'World'
+  private_key:  # Private key of input
+    description: 'Private Key'
+    required: true
+    default: 'World'
+outputs:
+  time: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node12'
+  main: 'index.js'
